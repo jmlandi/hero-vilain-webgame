@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herói e Vilão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="footage/CHARICON.png">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <div id="batalha">
+        <div class="personagem">
+            <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{ heroi.vida }} HP</div>
+            <div class="sprite"><img src="footage/CHAR_HERO.jpg" width="100%"></div>
+            <h1>Herói</h1>
+            <div class="acoes">
+                <button @click="realizarAcao('atacar', 'heroi')">Atacar</button>
+                <button @click="realizarAcao('defender', 'heroi')">Defender</button>
+                <button @click="realizarAcao('usarPocao', 'heroi')">Poção</button>
+                <button @click="realizarAcao('correr', 'heroi')">Correr</button>
+            </div>
+        </div>
+        <div class="personagem">
+            <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{ vilao.vida }} HP</div>
+            <div class="sprite"><img src="footage/CHAR_BOSS.jpg" width="100%"></div>
+            <h1>Vilão</h1>
+        </div>
+    </div>
+    <div class="log">
+        <h2>Histórico da Batalha</h2>
+        <ul
+            id="logData"
+            v-for="(log, index) in logAcoes"
+            :key="index"
+        >{{ index + 1 }}: {{ log }}</ul>
+    </div>
+</div>  
+</body>
+</html>
+
+<script src="index.js"></script>
