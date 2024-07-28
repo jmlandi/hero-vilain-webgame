@@ -1,8 +1,8 @@
-# 🎮 Herói & Vilão | Web Game
-Este projeto é uma prova da faculdade de Desenvolvimento de Software Multiplataforma da Fatec. Utilizei vue.js através da Optional API (baseado em orientação a objetos) para desenvolver o web game e um pouco de IA na geração dos personagens através do Dall-e com retoque no Photoshop. Neste jogo baseado em turnos, você controla as ações do herói com o objetivo de derrotar o vilão. Será que você consegue?
+# 🎮 Hero & Villain | Web Game
+This project is a college assignment for the Multiplatform Software Development course at Fatec. I used Vue.js with the Composition API (object-oriented approach) to develop the web game, and incorporated a bit of AI for character generation through Dall-e, with touch-ups in Photoshop. In this turn-based game, you control the hero's actions with the goal of defeating the villain. Can you succeed?
 
-## 🚀 Acesse o site para jogar: [herovilan.netlify.app](https://herovilan.netlify.app/)
+## 🚀 Access the site to play: herovilan.netlify.app
 <img src="https://i.giphy.com/bHSkKRvkRvy5chUBBp.webp" width="100%">
 
 ### 📄 tags
-`vue.js` `javascript` `css` `html` `gamming` `dall-e`
+vue.js javascript css html gaming dall-e
